@@ -4,35 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <section>
-        <div class="container">
-            <nav id='menu'>
-                <ul>
-                  <li><a href='index.html'>Home</a></li>
-                  <li><a href='home.html'>Weather App</a></li>
-                  <li><a href='features.html'>Features</a></li>
-                  <li><a href='about.html'>About</a></li>
-                </ul>
-              </nav>
-        </div>
-    </section>
-    <Section>
-        <div class="header">
-            <h1>Alx Foundation Portfolio Project</h1><hr>
-            <h1>WEATHER APPLICATION</h1>
-        </div>
-        <div class="card">
-            <p>This weather Application is your ultimate weather companion! Stay one step ahead of Mother Nature with our powerful and 
-                intuitive weather application. With this application, you can effortlessly access accurate and up-to-date weather information 
-                for any location around the Nigeria.
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-                Experience a sleek and user-friendly interface that provides you with a comprehensive overview of current weather conditions,
-                including temperature, humidity, wind speed, and visibility. Our advanced radar feature allows you to track storms, precipitation
-                patterns, and severe weather alerts in real-time, ensuring you're always prepared.</p>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\main.css">
+</head>
+<body class="bg-dark">
+    <style>
+        #banner{
+            background: url("image/weather2.jpg");
+            z-index: 100;
+            width: 100%;
+            height: 60vh;
+            background-size: cover;
+            background-position: top 70px center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    </style>
+ 
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container">
+          <img src="image/leftlogo.png " class="leftlogo" alt="" onclick="window.open('https://hopesamuel.github.io/home.html', '_blank?')">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fa-solid fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link" href='index.html' target="_blank?">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='https://hopesamuel.github.io/home.html' target="_blank?">Weather App</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='features.html' target="_blank?">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='about.html' target="_blank?">About</a>
+              </li>
+              
+              
+          </div>
+        </div>
+      </nav>
+
+      <section id="banner" class="my-5 py-5 col-lg-12 col-md-12 col-sm-12" >
+        <div class="container">
+          <h4>For The Love of weather Conditions</h4>
+
+        <h1><b>Providing Useful Weather Tips</b></h1>
+          <button class="text-uppercase mt-5" onclick="window.open('https://hopesamuel.github.io/home.html', '_blank')">Click here to Visit</button>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="container text-center mb-5">
+          <h3>Some Features</h3>
+          <hr class="mx-auto">
+          <p>Here you can check out some of the unique Features of of our App</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+          <div class="product text-center col-lg-3 col-md-6 col-sm-12">
+            <img class="img-fluid" src="image/featured/featureg2.png" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-    </Section>
+            <h5 class="p-name">Search Feature</h5>
+            <h4 class="p-price">Search for any Location of your choice</h4>
+            <button class="buy-btn" onclick="window.open('https://hopesamuel.github.io/home.html', '_blank')">Click to Visit</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-6 col-sm-12">
+            <img class="img-fluid " src="image/featured/featureg2.png" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Temperature</h5>
+            <h4 class="p-price">Shows The Temperature of The desired Location</h4>
+            <button class="buy-btn" onclick="window.open('https://hopesamuel.github.io/home.html', '_blank')">Click to Visit</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-6 col-sm-12">
+            <img class="img-fluid " src="image/featured/featureg2.png" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Wind Speed</h5>
+            <h4 class="p-price">gives the Speed of wind of the deired location</h4>
+            <button class="buy-btn" onclick="window.open('https://hopesamuel.github.io/home.html', '_blank')">Click to Visit</button>
+          </div>
+          <div class="product text-center col-lg-3 col-md-6 col-sm-12">
+            <img class="img-fluid " src="image/featured/featureg2.png" alt="">
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="p-name">Humidity</h5>
+            <h4 class="p-price">Get The Best Humidity of the desired location</h4>
+            <button class="buy-btn" onclick="window.open('https://hopesamuel.github.io/home.html', '_blank')">Click to Visit</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class=" container">
+        <div class="text-center container div1">
+          <div class=""><button class="button mb-3">About The Project</button></div>
+          <h4>What Brought About The Project?</h4>
+          <hr class="mx-auto">
+        </div>
+        <div class="container div2">
+          <p>The inspiration behind me building a weather app stems from the desire to provide Nigerians with easily 
+            accessible and accurate weather information. Weather affects our daily lives, from planning outdoor activities 
+            to making travel arrangements. By creating a weather app, i am to empower individuals with real-time forecasts, 
+            severe weather alerts, and personalized features such as location-based weather updates and customizable notifications. 
+            The app serves as a convenient tool for users to stay informed about weather conditions and make informed decisions, ensuring 
+            their safety and enhancing their overall experience in various aspects of life
+          </p>
+        </div>
+        <div class="container ">
+          <div class="container dev">
+            <div class=" text-center mb-3"><button class="button">About The Developer</button></div>
+            <hr class="mx-auto">
+          </div>
+          <div class="row dev-details">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+              <p>
+                Hello, my name is Osarobari Hope, a results-driven Executive Assistant a passionate and dedicated student of software engineering with Alx.
+                With a strong interest in technology and its ever-expanding possibilities, I have chosen to immerse myself in the world of software development. <br>
+
+                My journey as a software engineering student with Alx has been both exciting and rewarding.Through my coursework, I have gained a solid foundation in programming languages such as JavaScript, C, html and Python, as well as hands-on experience with various development tools and frameworks. <br><br>
+                I have also had the opportunity to work on diverse projects, honing my problem-solving skills and fostering my creativity.
+
+                As a student of software engineering, I strive to stay updated with the latest industry trends and advancements. I actively engage in personal projects, attend tech conferences, and participate in coding competitions to challenge myself and broaden my knowledge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
